@@ -27,7 +27,7 @@ export class InputBoxComponent {
 
     if (password.length >= 8) {
       if (/\d/.test(password)) numbers = true;
-      if (/[a-zA-Z]/.test(password)) letters = true;
+      if (/[a-zA-Zа-яА-Я]/.test(password)) letters = true;
       if (/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(password)) marks = true;
 
       if (letters && marks && numbers) {
