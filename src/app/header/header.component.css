@@ -1,0 +1,12 @@
+header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  background-color: aliceblue;
+}
+
+header div {
+  display: flex;
+  gap: 8px;
+}

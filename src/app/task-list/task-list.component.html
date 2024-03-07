@@ -1,0 +1,13 @@
+<ul>
+  <app-task
+    *ngFor="let task of tasks"
+    [id]="task.id"
+    [index]="task.index"
+    [task]="task.title"
+    [tasks]="tasks"
+    [checked]="task.isChecked"
+  />
+  <div *ngIf="tasks.length === 0">
+    <p>No tasks</p>
+  </div>
+</ul>

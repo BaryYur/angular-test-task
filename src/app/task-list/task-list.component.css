@@ -1,0 +1,14 @@
+ul {
+  width: 380px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+ul p {
+  color: grey;
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+}

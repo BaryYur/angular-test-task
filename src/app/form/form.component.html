@@ -1,0 +1,11 @@
+<form (ngSubmit)="addTask()">
+  <input
+    type="text"
+    placeholder="Create task"
+    style="padding: 8px; width: 380px"
+    pInputText
+    [(ngModel)]="newTask"
+    (keyup.enter)="addTask()"
+    [ngModelOptions]="{standalone: true}"
+  />
+</form>
