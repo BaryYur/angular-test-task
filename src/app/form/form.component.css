@@ -1,9 +1,0 @@
-form {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-}
-
-form input {
-  padding: 5px;
-}
