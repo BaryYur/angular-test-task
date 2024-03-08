@@ -11,25 +11,18 @@
   display: flex;
 }
 
-.input-box input {
+.input-box .input-field {
   width: 85%;
   padding: 14px 16px;
-  /*border: 1px solid lightgray;*/
   border: none;
   border-radius: 10px 0 0 10px;
   font-size: 17px;
   background-color: whitesmoke;
 }
 
-.input-box input::placeholder {
-  font-weight: 200;
-  color: rgba(128, 128, 128, 0.73);
-}
-
 .input-box button {
   width: 15%;
   background-color: whitesmoke;
-  /*border: 1px solid lightgray;*/
   border: none;
   padding: 5px;
   border-radius: 0 10px 10px 0;
@@ -48,76 +41,4 @@
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-.empty-strength,
-.weak-strength,
-.medium-strength,
-.strong-strength,
-.short-strength {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.empty-strength span,
-.weak-strength span,
-.medium-strength span,
-.strong-strength span,
-.short-strength span {
-  font-size: 14px;
-  color: grey;
-}
-
-.short-strength div {
-  width: 30px;
-  height: 30px;
-  background-color: rgb(248 113 113);
-  border: 1px solid rgb(239 68 68);
-  border-radius: 5px;
-}
-
-.empty-strength div {
-  width: 30px;
-  height: 30px;
-  background-color: lightgray;
-  border: 1px solid grey;
-  border-radius: 5px;
-}
-
-.weak-strength div {
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
-  background-color: lightgray;
-  border: 1px solid grey;
-}
-
-.weak-strength div:first-child {
-  background-color: rgb(248 113 113);
-  border: 1px solid rgb(239 68 68);
-}
-
-.medium-strength div {
-  width: 30px;
-  height: 30px;
-  background-color: rgb(250 204 21);
-  border: 1px solid rgb(234 179 8);
-  border-radius: 5px;
-}
-
-.medium-strength div:nth-child(3) {
-  width: 30px;
-  height: 30px;
-  background-color: lightgray;
-  border: 1px solid grey;
-  border-radius: 5px;
-}
-
-.strong-strength div {
-  width: 30px;
-  height: 30px;
-  background-color: rgb(22 163 74);
-  border: 1px solid rgb(22 101 52);
-  border-radius: 5px;
 }

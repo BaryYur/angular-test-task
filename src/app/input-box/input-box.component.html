@@ -1,10 +1,11 @@
 <div class="container">
   <div class="input-box">
-    <input
-      #inputField
-      (input)="inputChangeHandler(inputField.value)"
-      type="{{ inputType }}"
-      placeholder="Enter your password"
+    <app-input
+      [placeholder]="'Enter your password'"
+      [type]="inputType"
+      [class]="'input-field'"
+      [(ngModel)]="password"
+      (valueChanged)="inputChangeHandler()"
     />
     <button (click)="changeInputType()">
       <span *ngIf="inputType === 'password'">
@@ -19,35 +20,7 @@
   <div class="checking-box">
     <div class="strength-box">
       <div>Password strength:</div>
-      <div class="empty-strength" *ngIf="passwordStrength === 'empty'">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div class="short-strength" *ngIf="passwordStrength === 'short'">
-        <div></div>
-        <div></div>
-        <div></div>
-        <span>(short)</span>
-      </div>
-      <div class="weak-strength"  *ngIf="passwordStrength === 'weak'">
-        <div></div>
-        <div></div>
-        <div></div>
-        <span>(weak)</span>
-      </div>
-      <div class="medium-strength"  *ngIf="passwordStrength === 'medium'">
-        <div></div>
-        <div></div>
-        <div></div>
-        <span>(medium)</span>
-      </div>
-      <div class="strong-strength"  *ngIf="passwordStrength === 'strong'">
-        <div></div>
-        <div></div>
-        <div></div>
-        <span>(strong)</span>
-      </div>
+      <app-strength-box [passwordStrength]="passwordStrength" />
     </div>
   </div>
 </div>

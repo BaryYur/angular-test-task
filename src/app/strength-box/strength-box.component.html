@@ -1,0 +1,6 @@
+<div  class="{{ passwordStrength + '-strength' }}">
+  <div></div>
+  <div></div>
+  <div></div>
+  <span *ngIf="passwordStrength !== 'empty'">{{ '(' + passwordStrength + ')' }}</span>
+</div>
